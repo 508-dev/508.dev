@@ -267,6 +267,25 @@ nav li a:visited {
     display: none;
 }
 
+section ul {
+  display: grid;
+  grid-template-columns: 30px 30px 30px;
+  align-items: start;
+  justify-items: start;
+  grid-gap: 10px 25px;
+  padding: 0px;
+  justify-content: space-around;
+  list-style-type: circle;
+}
+
+ul.column-style{
+    display: flex;
+    flex-flow: column;
+}
+ul.column-style li {
+    margin-top: 5px;
+}
+
 /* Tablet and Half Screen Styles */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .desktop {
@@ -285,6 +304,10 @@ nav li a:visited {
     /* } */
     header h1 {
         font-size: calc(var(--font-size ) * 8);
+    }
+
+    section ul {
+      grid-template-columns: 30px 30px;
     }
 }
 
@@ -380,6 +403,10 @@ nav li a:visited {
   .avatar-container {
     width: 100%;
     height: 100%;
+  }
+
+  section ul {
+    grid-template-columns: 10px;
   }
 
 }
