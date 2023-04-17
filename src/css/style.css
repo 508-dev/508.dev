@@ -407,6 +407,7 @@ ul.column-style li {
 
   section ul {
     grid-template-columns: 10px;
+    row-gap: 0;
   }
 
 }
