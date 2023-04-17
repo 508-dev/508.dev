@@ -239,7 +239,8 @@ nav li a:visited {
 }
 
 nav li a.on-page {
-  color: blue;  
+  color: #92dce5;  
+  text-shadow: 2px 2px 3px #1e0d0a;
 }
 
 
