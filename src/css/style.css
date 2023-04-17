@@ -238,6 +238,10 @@ nav li a:visited {
   margin-bottom: 5px;
 }
 
+nav li a.on-page {
+  color: blue;  
+}
+
 
 .toggle-menu {
   display: none;
@@ -256,6 +260,7 @@ nav li a:visited {
   height: 0px;
   overflow: hidden;
 }
+
 
 .desktop {
     display: block;
