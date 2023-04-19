@@ -267,6 +267,90 @@ nav li a:visited {
     display: none;
 }
 
+
+.bio-area {
+  padding: 50px 35px 30px 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bio-area .single-bio {
+  margin: 0px 13px 30px 13px;
+  float: left;
+  width: 250px;
+}
+
+
+.bio-area .single-bio .thumb {
+  overflow: hidden;
+  position: relative;
+}
+
+.bio-area .single-bio .thumb::before {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: var(--color-error);
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  content: '';
+}
+
+.bio-area .single-bio .thumb .avatar-container {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  width: 300px;
+  height: 250px;
+  background-color: var(--color-avatar-bg);
+  overflow: hidden;
+}
+
+.bio-area .single-bio .bio-info {
+  margin-top: 20px;
+}
+
+.bio-area .single-bio .bio-info h3 {
+  margin-bottom: 7px;
+}
+
+.bio-area .single-bio .bio-info h3 a {
+  color: var(--font-color);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.bio-area .single-bio .bio-info p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-darkGrey);
+  margin-bottom: 0;
+}
+
+.bio-area .single-bio:hover .bio-info h3 a {
+  color: var(--color-error);
+  text-decoration: underline;
+}
+
+.bio-area .single-bio:hover .thumb .avatar-container {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
 /* Tablet and Half Screen Styles */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .desktop {
@@ -363,9 +447,10 @@ nav li a:visited {
   }
 
   .bio-area {
-    display: block;
+    display: float;
     justify-content: center;
     align-items: center;
+    padding: 0px;
   }
 
   .bio-area .single-bio {
@@ -382,88 +467,6 @@ nav li a:visited {
     height: 100%;
   }
 
-}
-
-.bio-area {
-  padding: 50px 35px 30px 35px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.bio-area .single-bio {
-  margin: 0px 13px 30px 13px;
-  float: left;
-  width: 250px;
-}
-
-.bio-area .single-bio .thumb {
-  overflow: hidden;
-  position: relative;
-}
-
-.bio-area .single-bio .thumb::before {
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: var(--color-error);
-  opacity: 0;
-  position: absolute;
-  z-index: 2;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  content: '';
-}
-
-.bio-area .single-bio .thumb .avatar-container {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  width: 300px;
-  height: 250px;
-  background-color: var(--color-avatar-bg);
-  overflow: hidden;
-}
-
-.bio-area .single-bio .bio-info {
-  margin-top: 20px;
-}
-
-.bio-area .single-bio .bio-info h3 {
-  margin-bottom: 7px;
-}
-
-.bio-area .single-bio .bio-info h3 a {
-  color: var(--font-color);
-  font-size: 22px;
-  font-weight: 500;
-}
-
-.bio-area .single-bio .bio-info p {
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--color-darkGrey);
-  margin-bottom: 0;
-}
-
-.bio-area .single-bio:hover .bio-info h3 a {
-  color: var(--color-error);
-  text-decoration: underline;
-}
-
-.bio-area .single-bio:hover .thumb .avatar-container {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
 }
 
 
