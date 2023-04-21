@@ -222,6 +222,18 @@ nav ol {
   display: flex;
 }
 
+nav ol.secondary-nav {
+  display: block;
+  list-style: none;
+  font-size: 14pt;
+}
+
+ol.secondary-nav li ol {
+  display: block;
+  font-size: 12pt;
+  text-indent: 15px;
+}
+
 nav li:first-child {
   margin-left: 0;
 }
@@ -280,6 +292,12 @@ nav li a:visited {
         display: none;
     }
 
+    ol.secondary-nav li ol {
+      display: block;
+      font-size: 14pt;
+    }
+  
+
     /* body { */
     /*     max-width: 100rem; */
     /* } */
@@ -320,6 +338,16 @@ nav li a:visited {
     right: 60%;
     width: 28px;
     height: 32px;
+  }
+
+  nav ol.secondary-nav {
+    display: block;
+    font-size: 16pt;
+  }
+  
+  ol.secondary-nav li ol {
+    display: block;
+    font-size: 16pt;
   }
 
   .menu-bar {
