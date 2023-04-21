@@ -209,8 +209,10 @@ section {
 
 /* TODO Probably delete this and combine with section above */
 section.index {
-  border-radius: 2px;
-  margin: var(--margin-big);
+  border-radius: 10px;
+  margin-top: 50px;
+  border-top-style:solid;
+  border-width: 5px;
 }
 
 
