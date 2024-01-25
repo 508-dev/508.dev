@@ -218,9 +218,23 @@ section {
     margin: var(--margin-big);
 }
 
-section details summary{
-  cursor: pointer;
+/* Animation credit to Tarcio Zemel */
+/* https://stackoverflow.com/a/73447722/2590119 */
+
+details {
+    padding: 10px;
 }
+details summary {
+  cursor: pointer;
+  margin-bottom: -10px; /* for more prominent move */
+  transition: margin 250ms ease-out;
+}
+
+details[open] summary {
+    margin-bottom: 10px;
+}
+
+
 
 
 nav ol {
@@ -413,18 +427,23 @@ table td {
 .bio-area .single-bio {
   margin: 0px 13px 30px 13px;
   width: 250px;
+  height: 506px;
   box-sizing: border-box;
 }
 
 .bio-area .single-bio .thumb {
   overflow: hidden;
   position: relative;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bio-area .single-bio .thumb img {
-  width: 100%;
-  height: 100%;
-  max-height: 75px;
+  max-height: 250px;
+  max-width: 300px;
   padding: 15px;
   object-fit: contain;
 }
@@ -513,4 +532,17 @@ table td {
   position: absolute;
   background-color: var(--color-grey);
   border-radius: 15rem 15rem 0 0;
+}
+
+.service h4 {
+    font-size: 1.1rem;
+    padding-left: 24px;
+}
+
+.service ul {
+    list-style: none;
+}
+
+.service .members .thumb {
+    width: 150px;
 }
